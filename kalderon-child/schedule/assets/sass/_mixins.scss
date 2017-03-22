@@ -1,0 +1,45 @@
+/**
+* MIXINS
+*/
+@mixin transform($val, $val2){
+  -webkit-transform: translate($val, $val2);
+  -moz-transform: translate($val, $val2);
+  -o-transform: translate($val, $val2);
+  -ms-transform: translate($val, $val2);
+  transform: translate($val, $val2);
+}
+
+@mixin rotate($val){
+  -ms-transform: rotate($val + deg); /* IE 9 */
+  -webkit-transform: rotate($val +deg); /* Chrome, Safari, Opera */
+  -o-transform: rotate($val +deg);
+  -ms-transform: rotate($val +deg);
+  transform: rotate($val +deg);
+}
+
+@mixin transition( $sec, $prop: all){
+  -webkit-transition: $prop $sec ease;
+  -moz-transition: $prop $sec ease;
+  -o-transition: $prop $sec ease;
+  -ms-transition: $prop $sec ease;
+  transition: $prop $sec ease;
+}
+
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $size $color #{$inset};
+  -moz-box-shadow:$top $left $blur $size $color #{$inset};
+  -o-box-shadow:$top $left $blur $size $color #{$inset};
+  -ms-box-shadow:$top $left $blur $size $color #{$inset};
+  box-shadow:$top $left $blur $size $color #{$inset};
+}
+
+
+
+@mixin allB($property, $value) {
+  -webkit-#{$property}: #{$value};
+   -khtml-#{$property}: #{$value};
+     -moz-#{$property}: #{$value};
+      -ms-#{$property}: #{$value};
+       -o-#{$property}: #{$value};
+          #{$property}: #{$value};
+}

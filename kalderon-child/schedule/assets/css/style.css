@@ -1,0 +1,306 @@
+/**
+ * VARIABLES
+ */
+/**
+ * TYPOGRAPHY
+ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
+/**
+* MIXINS
+*/
+/*body {
+  background-color: #fff;
+  color: #9a9a9a;
+  overflow-x: hidden;
+  line-height: 1;
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.italic {
+  font-style: italic; }*/
+
+.btn {
+  font-size: 24px;
+  font-weight: 100;
+  text-shadow: none;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .btn.btn-warning {
+    background-color: #f6961e;
+    color: white; }
+    .btn.btn-warning.shadow {
+      box-shadow: 0 4px 0px 0 #d57a11; }
+    .btn.btn-warning:hover {
+      background-color: #d57a11; }
+      .btn.btn-warning:hover.shadow {
+        box-shadow: 0 4px 0px 0 #f6961e; }
+  .btn.btn-white {
+    background-color: white;
+    color: #f6961e; }
+    .btn.btn-white.shadow {
+      box-shadow: 0 4px 0px 0 #dddddd; }
+    .btn.btn-white:hover {
+      background-color: #dddddd;
+      color: #3b3e47; }
+      .btn.btn-white:hover.shadow {
+        box-shadow: 0 4px 0px 0 white; }
+  .btn.border {
+    background-color: rgba(255, 255, 255, 0);
+    color: #f6961e;
+    border: 1px solid #f6961e; }
+    .btn.border:hover {
+      background-color: #f6961e;
+      color: white; }
+
+
+.schedule {
+  background-color: #E7EBEE; }
+  .schedule h3 {
+    margin-bottom: 50px; }
+  .schedule .tabs {
+    margin-bottom: 50px; }
+    .schedule .tabs a {
+      display: block;
+      font-size: 24px;
+      padding: 10px 5px;
+      line-height: 30px;
+      text-align: center;
+      color: white; }
+      .schedule .tabs a:hover, .schedule .tabs a:focus {
+        text-decoration: none; }
+    .schedule .tabs li {
+      position: relative;
+      display: inline-block;
+      width: 46%;
+      background-color: #333333;
+      border-radius: 10px;
+      margin-right: 15px;
+      font-weight: 400;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .schedule .tabs li:after {
+        content: "";
+        bottom: 5px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .schedule .tabs li + li {
+        margin-left: 15px;
+        margin-right: 0; }
+      .schedule .tabs li.active, .schedule .tabs li:hover {
+        background-color: #f6961e;
+        -webkit-box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.15) ;
+        -moz-box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.15) ;
+        -o-box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.15) ;
+        -ms-box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.15) ;
+        box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.15) ; }
+        .schedule .tabs li.active:after, .schedule .tabs li:hover:after {
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px 10px 0 10px;
+          border-color: #f6961e transparent transparent transparent; }
+  .schedule .filter-btn {
+    display: block;
+    color: #9a9a9a;
+    margin-bottom: 50px; }
+    .schedule .filter-btn li {
+      font-size:1.1rem;
+      font-weight: bold;
+      color:#FFFFFF;
+      padding:0;
+      text-align: center;
+      float: none;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .schedule .filter-btn li + li:before {
+        content: "/";
+        display: inline-block;
+        margin:0 10px;
+       }
+      .schedule .filter-btn li.dev {
+        color: rgb(0, 172, 228); }
+      .schedule .filter-btn li.manage {
+        color: rgb(0, 166, 157); }
+      .schedule .filter-btn li.active span, .schedule .filter-btn li:hover span {
+        border-bottom: 2px solid #FFFFFF; }
+    .schedule .filter-btn span {
+      margin-right: 0px; }
+  .schedule .tab-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    margin-bottom: 60px; }
+    .schedule .tab-content:after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background-color: #333333;
+      border-radius: 10px;
+      z-index: 0; }
+    .schedule .tab-content .item {
+      position: relative;
+      display: inline-block;
+      max-width: 425px;
+      width: 100%;
+      border-radius: 10px;
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 12px 60px 12px 12px;
+      cursor: pointer;
+      z-index: 3; }
+      @media (max-width: 1200px) {
+        .schedule .tab-content .item {
+          max-width: 342px; } }
+      @media (max-width: 992px) {
+        .schedule .tab-content .item {
+          max-width: 250px; } }
+      .schedule .tab-content .item:before {
+        position: absolute;
+        content: "";
+        top: 21px;
+        width: 0;
+        height: 0;
+        border-style: solid; }
+      .schedule .tab-content .item:after {
+        content: attr(title);
+        position: absolute;
+        width: auto;
+        top: 22px;
+        color: #9a9a9a;
+        background-color: #E7EBEE;
+        font-size: 18px;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased; }
+      .schedule .tab-content .item i {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+        border-radius: 8px;
+        color: white;
+        background-color: #E0DCDB;
+        padding: 7px 0;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .schedule .tab-content .item.left {
+        float: left; }
+        .schedule .tab-content .item.left:before {
+          right: -15px;
+          border-width: 10px 0 10px 15px;
+          border-color: transparent transparent transparent white; }
+        .schedule .tab-content .item.left:after {
+          content: attr(title);
+          right: -70px; }
+      .schedule .tab-content .item.right {
+        float: right; }
+        .schedule .tab-content .item.right:before {
+          left: -15px;
+          border-width: 10px 15px 10px 0;
+          border-color: transparent white transparent transparent;
+          right: -15px; }
+        .schedule .tab-content .item.right:after {
+          content: attr(title);
+          left: -70px; }
+      .schedule .tab-content .item.blue strong {
+        color: #448ccb; }
+      .schedule .tab-content .item.orange strong {
+        color: #f6961e; }
+      .schedule .tab-content .item p {
+        line-height: 1.3;
+        font-size: 16px;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 35px;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        transition: all 0.4s ease; }
+        .schedule .tab-content .item p strong {
+          font-size: 24px;
+          margin-right: 5px; }
+      .schedule .tab-content .item:hover i {
+        background-color: #f6961e; }
+      .schedule .tab-content .item.open i:before {
+        font-family: "FontAwesome";
+        content: "\f068"; }
+      .schedule .tab-content .item.open p {
+        white-space: inherit;
+        text-overflow: inherit;
+        max-height: 235px; }
+
+@media (max-width: 768px) {
+  .schedule .tabs a {
+    font-size: 14px; }
+  .schedule .tabs li {
+    width: 45%; }
+    .schedule .tabs li + li {
+      margin-left: 0;
+      margin-right: 0; }
+  .schedule .filter-btn {
+    font-size: 15px; }
+    .schedule .filter-btn li {
+      padding: 0; }
+  .schedule .tab-content:after {
+    left: 30px;
+    right: auto; }
+  .schedule .tab-content .item {
+    width: 74%;
+    display: block;
+    max-width: none;
+    margin-left: 80px; }
+    .schedule .tab-content .item.right {
+      float: left; }
+    .schedule .tab-content .item.left:before {
+      right: auto;
+      left: -15px;
+      border-width: 10px 15px 10px 0;
+      border-color: transparent white transparent transparent; }
+    .schedule .tab-content .item.left:after {
+      content: attr(title);
+      right: auto;
+      left: -70px; }
+    .schedule .tab-content .item:not([title]) {
+      margin-top: -15px; }
+  .schedule .tab-content .item p {
+    font-size: 14px; }
+    .schedule .tab-content .item p strong {
+      font-size: 16px; } }
+
+/*# sourceMappingURL=style.css.map */

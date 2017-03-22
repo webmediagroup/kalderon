@@ -1,0 +1,992 @@
+/*
+  Theme Name:     Kalderon Child Theme
+  Template:       kalderon
+  Author: Web Media Group
+  Author URI: www.wmg.co.il
+*/
+body {
+  overflow-x: hidden; }
+
+a {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.main-navigation ul {
+  width: 100%; }
+  .main-navigation ul li {
+    float: right; }
+    .main-navigation ul li.leftItem {
+      float: left !important; }
+  .main-navigation ul ul.sub-menu {
+    margin: 0rem 0 0 0 !important;
+    width: 200px; }
+    .main-navigation ul ul.sub-menu li a {
+      line-height: 170%; }
+
+i.fa {
+  font: normal normal normal 14px/1 FontAwesome !important; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-20px); }
+  60% {
+    transform: translateY(-15px); } }
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite; }
+
+.no-padding-left {
+  padding-left: 0 !important; }
+
+.no-padding-right {
+  padding-right: 0 !important; }
+
+.no-padding-top {
+  padding-top: 0 !important; }
+
+.no-padding-bottom {
+  padding-bottom: 0 !important; }
+
+.no-padding {
+  padding: 0 !important; }
+
+/*
+***General***
+ */
+html {
+  font-size: 16px; }
+
+body * {
+  font-family: 'Assistant', sans-serif !important; }
+
+html, body {
+  height: 100%; }
+
+h1, h2 {
+  font-weight: 700;
+  margin: 0; }
+
+h1, p {
+  color: #FFFFFF; }
+
+p {
+  margin: 0;
+  color: #031424;
+  font-size: 1.2rem; }
+
+.float_right {
+  float: right; }
+
+.float_left {
+  float: left; }
+
+.clear {
+  clear: both; }
+
+.fullwidth {
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0; }
+
+.menu li.current_page_item a {
+  color: #00ace4 !important; }
+
+.site-content {
+  margin-top: 10px; }
+
+/* Content Page */
+.content_page_header {
+  position: relative; }
+  .content_page_header .title_breadcrumbs {
+    position: absolute;
+    top: 37%;
+    right: 0;
+    left: 0;
+    text-align: center; }
+    .content_page_header .title_breadcrumbs h1 {
+      font-size: 3rem; }
+    .content_page_header .title_breadcrumbs a {
+      color: #FFFFFF !important; }
+    .content_page_header .title_breadcrumbs span {
+      color: #00ace4 !important; }
+  .content_page_header .content_page_header_image {
+    margin-top: 0px;
+    padding: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 30vh;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+    display: table; }
+
+.contact_form_block {
+  padding: 2rem 0;
+  width: 100%;
+  background: #031424; }
+  .contact_form_block .container {
+    padding: 0; }
+    .contact_form_block .container p {
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 1.8rem; }
+
+/* Content Page */
+.block_title {
+  font-weight: bold;
+  font-size: 2rem;
+  display: inline-block; }
+  .block_title::after {
+    position: relative;
+    top: 10px;
+    display: block;
+    padding-top: 5px;
+    width: 80px;
+    height: 3px;
+    content: ""; }
+
+.blue {
+  color: #031424; }
+  .blue::after {
+    background: #031424; }
+
+.white {
+  color: #FFFFFF; }
+  .white::after {
+    background: #FFFFFF; }
+
+#main {
+  padding: 2rem 0; }
+
+.home #main {
+  padding: 0; }
+
+.about_block {
+  padding: 3rem 0;
+  width: 100%;
+  margin-top: 1rem; }
+  .about_block p {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 3rem 0;
+    color: #031424; }
+  .about_block a {
+    float: left;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    position: relative;
+    top: 5px;
+    left: 20px;
+    display: inline-block;
+    background: #32ccfe;
+    color: #000000;
+    padding: 10px 32px;
+    font-size: 1.2rem;
+    text-decoration: none; }
+
+.slider.fade {
+  opacity: 1; }
+  .slider.fade .slick-next {
+    left: 10px;
+    top: 49% !important;
+    z-index: 9; }
+  .slider.fade .slick-prev {
+    right: 10px;
+    top: 49% !important;
+    z-index: 9; }
+
+.team_block, .single_vehicle_block {
+  padding: 3rem 0;
+  background: #031424; }
+  .team_block p, .single_vehicle_block p {
+    color: #FFFFFF; }
+  .team_block .container, .single_vehicle_block .container {
+    padding: 0; }
+  .team_block h2, .single_vehicle_block h2 {
+    padding-bottom: 3rem; }
+  .team_block .team_items_block > div, .single_vehicle_block .team_items_block > div {
+    padding: 0; }
+    .team_block .team_items_block > div span.team_name, .single_vehicle_block .team_items_block > div span.team_name {
+      color: #FFFFFF;
+      font-size: 1.6rem; }
+    .team_block .team_items_block > div span.team_role, .single_vehicle_block .team_items_block > div span.team_role {
+      color: #32ccfe;
+      font-size: 1.6rem; }
+  .team_block .vehicle_details, .single_vehicle_block .vehicle_details {
+    padding-right: 0;
+    font-size: 1.2rem; }
+  .team_block .vehicle_price, .single_vehicle_block .vehicle_price {
+    font-size: 36px;
+    color: #32ccfe; }
+
+.single_vehicle_block {
+  padding: 1.3rem 0; }
+
+.top_vehicles_block {
+  padding: 3rem 0;
+  width: 100%;
+  margin-top: 1rem;
+  background: #031424; }
+  .top_vehicles_block a.all_vehicles_btn {
+    max-width: 320px;
+    display: block;
+    padding: 10px;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 87%;
+    margin: 35px auto 0 auto;
+    background: #FFFFFF;
+    color: #000000; }
+  .top_vehicles_block .container .slider.autoplay {
+    margin-top: 3rem;
+    text-align: right; }
+
+.vehicles_boxes {
+  margin-top: 2.5rem; }
+
+.vehicles_details_box {
+  text-align: right; }
+
+.vehicles_details_box {
+  display: none; }
+  .vehicles_details_box:hover .moreDetailsButton {
+    display: block; }
+
+.vehicle_details, h3.vehicle_name {
+  margin: 0;
+  padding-right: 10px;
+  color: #FFFFFF; }
+  .vehicle_details a, h3.vehicle_name a {
+    color: #FFFFFF; }
+
+.vehicle_details:nth-of-type(1) {
+  color: #00ace4; }
+
+h3.vehicle_name {
+  margin-bottom: 1rem; }
+
+.img_box {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+
+.img_box img {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0; }
+
+.img_box .overly {
+  background: rgba(0, 172, 228, 0.2);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.img_box .moreDetailsButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  display: none;
+  width: 130px;
+  color: #FFFFFF !important;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 9;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0; }
+  .img_box .moreDetailsButton:hover {
+    background: #000; }
+
+.img_box:hover .overly,
+.img_box:hover .moreDetailsButton {
+  opacity: 1; }
+
+/*
+***Homepage***
+ */
+.homepage_top_block {
+  width: 100%; }
+  .homepage_top_block .right_block {
+    padding-right: 0;
+    padding-left: 10px; }
+    .homepage_top_block .right_block .homepage_slider_item {
+      min-height: 492px;
+      padding-right: 2rem; }
+    .homepage_top_block .right_block .slider.fade .slick-slide img {
+      width: 100%;
+      height: 493px !important; }
+    .homepage_top_block .right_block .slider.fade .slideDetails {
+      color: #FFFFFF;
+      width: 300px !important;
+      position: absolute !important;
+      top: 100px !important;
+      right: 100px !important;
+      opacity: 1 !important;
+      z-index: 9999 !important;
+      transition: none !important; }
+  .homepage_top_block .left_block {
+    padding: 0; }
+    .homepage_top_block .left_block .homepage_cube_item {
+      text-align: right;
+      background-size: 100% 100%;
+      max-width: 100%;
+      min-height: 250px;
+      border-bottom: 8px solid #FFFFFF; }
+      .homepage_top_block .left_block .homepage_cube_item:nth-child(1), .homepage_top_block .left_block .homepage_cube_item:nth-child(3) {
+        border-left: 8px solid #FFFFFF; }
+  .homepage_top_block .read_more_link {
+    color: #00ace4;
+    font-size: 1.3rem; }
+  .homepage_top_block h3, .homepage_top_block h4 {
+    margin: 0;
+    text-decoration: none; }
+    .homepage_top_block h3 a, .homepage_top_block h4 a {
+      color: #FFFFFF;
+      text-decoration: none; }
+  .homepage_top_block h3 {
+    font-size: 2.6rem;
+    font-weight: bold; }
+  .homepage_top_block h4 {
+    font-size: 1.2rem; }
+
+span.wpcf7-not-valid-tip {
+  color: red !important; }
+
+.wpcf7-form .wpcf7-mail-sent-ok {
+  color: green !important; }
+
+div.wpcf7-mail-sent-ng {
+  margin-top: 0;
+  margin-right: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  border: none;
+  color: #FFFFFF; }
+
+/*
+***Mantopused***
+ */
+.mantopused_block {
+  position: relative;
+  background-size: 100% 100%;
+  height: 900px;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px; }
+  .mantopused_block .nav {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 0; }
+    .mantopused_block .nav h1.title {
+      font-size: 3.2rem;
+      color: #ca2448;
+      font-weight: bold; }
+    .mantopused_block .nav p {
+      margin: 1.1rem 0 4rem 0;
+      font-size: 1.3rem;
+      color: #FFFFFF; }
+    .mantopused_block .nav .mantopused_buttons {
+      position: relative;
+      display: inline-block; }
+      .mantopused_block .nav .mantopused_buttons .mantopused_button {
+        margin: 0 30px;
+        display: inline-block;
+        background-color: #FFFFFF;
+        color: #000000;
+        padding: 0.3rem 2.2rem;
+        font-weight: bold;
+        font-size: 3rem;
+        text-decoration: none; }
+        .mantopused_block .nav .mantopused_buttons .mantopused_button:hover {
+          background-color: #32ccfe; }
+      .mantopused_block .nav .mantopused_buttons:after {
+        font-family: FontAwesome;
+        content: "\f177";
+        color: #FFFFFF;
+        font-size: 4rem;
+        position: relative;
+        display: inline-block;
+        right: 20px;
+        top: 0px; }
+      .mantopused_block .nav .mantopused_buttons:before {
+        font-family: FontAwesome;
+        content: "\f178";
+        color: #FFFFFF;
+        font-size: 4rem;
+        position: relative;
+        display: inline-block;
+        left: 20px;
+        top: 0px; }
+
+.page-template-mantopused #main h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center; }
+
+/*
+*** Contact Us
+ */
+.contact_us_form_block .contact_form_right .wpcf7-form-control-wrap input {
+  margin-bottom: 20px; }
+.contact_us_form_block input, .contact_us_form_block textarea {
+  border: 1px solid #000000 !important;
+  max-width: 100%; }
+
+.place_map {
+  position: relative; }
+  .place_map .place_map_overlay {
+    width: 100%;
+    min-height: 800px;
+    position: absolute;
+    top: 0; }
+  .place_map p {
+    font-size: 0; }
+    .place_map p iframe {
+      width: 100%;
+      min-height: 800px; }
+
+.waze_btn {
+  display: none; }
+
+/*
+*** Services
+ */
+.service_info {
+  padding: 2rem 0;
+  width: 100%;
+  background: #031424; }
+  .service_info .container {
+    padding: 0; }
+    .service_info .container h2 {
+      color: #FFFFFF !important; }
+    .service_info .container .elementor-widget-text-editor {
+      color: #FFFFFF !important;
+      font-size: 1.2rem !important; }
+
+.services_icons {
+  background: #00adef; }
+  .services_icons .container div.service_icon {
+    text-align: center;
+    float: right;
+    color: #FFFFFF;
+    padding: 1.2rem 0;
+    font-size: 1.2rem; }
+    .services_icons .container div.service_icon .iconDiv {
+      height: 40px; }
+      .services_icons .container div.service_icon .iconDiv img {
+        max-width: 40px;
+        width: 40px; }
+
+.page-template-sell #main,
+.page-template-buy #main,
+.page-template-services #main {
+  text-align: center; }
+  .page-template-sell #main .block_title:after,
+  .page-template-buy #main .block_title:after,
+  .page-template-services #main .block_title:after {
+    right: 36%; }
+
+/*
+*** Buy
+ */
+.buy-block {
+  margin-top: 0;
+  background: #031424; }
+  .buy-block .loadMoreDiv {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 100px; }
+    .buy-block .loadMoreDiv .loadMore {
+      padding: 7px 40px;
+      text-align: center;
+      background-color: transparent;
+      color: #fff;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #fff;
+      font-size: 1.1rem;
+      box-shadow: 0 1px 1px #ccc;
+      transition: all 600ms ease-in-out;
+      -webkit-transition: all 600ms ease-in-out;
+      -moz-transition: all 600ms ease-in-out;
+      -o-transition: all 600ms ease-in-out; }
+    .buy-block .loadMoreDiv .loadMore:hover {
+      background-color: #00ace4;
+      text-decoration: none; }
+
+/*
+*** Sell
+ */
+.page-template-sell .wpcf7 label {
+  margin-top: 20px;
+  display: block;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  text-align: center; }
+.page-template-sell .wpcf7 input {
+  width: 32%;
+  margin-left: 1%;
+  margin: 10px 5px;
+  float: right; }
+.page-template-sell .wpcf7 span.wpcf7-form-control-wrap.message > input {
+  width: 65%; }
+.page-template-sell .wpcf7 .wpcf7-submit {
+  width: 33% !important;
+  display: block !important;
+  margin: 20px auto !important;
+  float: none !important; }
+.page-template-sell .wpcf7 p:nth-child(3) {
+  margin-top: 120px; }
+
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding: 1.8rem 0 1.3rem 0; }
+
+/*
+***Desktop***
+*/
+@media screen and (min-width: 769px) {
+  header {
+    background-image: url(/wp-content/uploads/2017/03/menu_bg.jpg); }
+    header .logo {
+      width: 250px; }
+    header #site-navigation ul {
+      float: right;
+      margin: 2rem 0 0 0;
+      padding: 0; }
+      header #site-navigation ul li {
+        margin-left: 2rem;
+        font-weight: normal; }
+        header #site-navigation ul li a {
+          color: #FFFFFF;
+          font-size: 1.2rem;
+          text-decoration: none; }
+          header #site-navigation ul li a:hover {
+            color: #00ace4; }
+          header #site-navigation ul li a .fa {
+            margin-right: 5px; }
+
+  .homepage_top_block .right_block {
+    min-width: 768px; }
+
+  .services_icons .container div.service_icon {
+    position: relative;
+    width: 14%; }
+    .services_icons .container div.service_icon .arrow {
+      position: absolute;
+      bottom: 0px;
+      right: 44%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 10px 10px;
+      border-color: transparent transparent #031424 transparent; }
+
+  .top_vehicles_block a.all_vehicles_btn {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none; }
+    .top_vehicles_block a.all_vehicles_btn:hover {
+      background: #FFFFFF;
+      color: #031424; }
+
+  .team_block .team_items_block > div img {
+    width: 95%; }
+
+  .slick-prev, .slick-next {
+    top: 35% !important; }
+
+  .contact_us_form_block {
+    width: 700px;
+    position: absolute;
+    right: auto;
+    left: auto;
+    top: 23%;
+    padding: 2rem 2rem 1rem 2rem;
+    background: #FFFFFF; }
+    .contact_us_form_block .contact_form_right {
+      margin-top: 30px;
+      float: right;
+      width: 50%; }
+      .contact_us_form_block .contact_form_right .wpcf7-form-control-wrap {
+        margin-bottom: 5px; }
+        .contact_us_form_block .contact_form_right .wpcf7-form-control-wrap input {
+          width: 90%; }
+    .contact_us_form_block .contact_form_left {
+      margin-top: 30px;
+      float: left;
+      width: 50%; }
+    .contact_us_form_block input, .contact_us_form_block textarea {
+      border: 1px solid #000000 !important; }
+    .contact_us_form_block input[type="submit"] {
+      margin-top: 10px !important; } }
+.carousel-control {
+  background-image: none !important; }
+
+/***Contact Form ***/
+ol.singleline {
+  list-style: none;
+  margin: 15px 0;
+  padding: 0 !important; }
+
+.wpcf7 .singleline li {
+  display: inline-block;
+  float: right;
+  width: 24%; }
+  .wpcf7 .singleline li:nth-child(2) {
+    margin: 0 1%; }
+  .wpcf7 .singleline li:nth-child(3) {
+    margin-left: 1%; }
+  .wpcf7 .singleline li input {
+    max-width: 100%; }
+
+input.wpcf7-form-control.wpcf7-text {
+  text-align: right;
+  padding: 13px 25px;
+  background: transparent !important;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  font-size: 1.2rem; }
+
+.wpcf7-form-control.wpcf7-submit {
+  border: none !important;
+  margin-top: 0px !important;
+  margin-bottom: 20px !important;
+  padding: 10px !important;
+  width: 70% !important;
+  color: #FFFFFF !important;
+  background-color: #065245;
+  font-size: 1.2rem;
+  float: right;
+  border: none !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 17px 20px !important;
+  max-width: 100%;
+  width: 100% !important;
+  color: #FFFFFF !important;
+  background-color: #32ccfe; }
+
+.wpcf7-form-control.wpcf7-submit:hover {
+  background-color: #3bbea2; }
+
+.wpcf7-form .wpcf7-validation-errors, .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
+  border: none !important;
+  margin: 0px !important;
+  border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  float: right !important;
+  width: 100% !important;
+  text-align: center !important;
+  color: #FFFFFF !important; }
+
+.wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors, .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok {
+  color: #FFFFFF !important; }
+
+span.wpcf7-not-valid-tip, .wpcf7-form .wpcf7-validation-errors {
+  color: #FFFFFF;
+  text-align: right;
+  direction: rtl; }
+
+span.wpcf7-not-valid-tip, .wpcf7-form .wpcf7-mail-sent-ok {
+  color: #FFFFFF;
+  text-align: center;
+  direction: rtl; }
+
+::-webkit-input-placeholder {
+  text-align: right; }
+
+::-moz-placeholder {
+  text-align: right; }
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+  text-align: right; }
+
+/* ie */
+input:-moz-placeholder {
+  text-align: right; }
+
+@media screen and (max-width: 768px) {
+  .singleline {
+    padding: 0; }
+
+  .wpcf7 .singleline li {
+    margin: 10px auto;
+    display: block;
+    float: none;
+    width: 90%; }
+
+  .wpcf7 .singleline li:nth-child(1) {
+    margin-right: 5%; }
+
+  .wpcf7-form-control.wpcf7-submit {
+    width: 100% !important; } }
+/***Contact Form ***/
+footer {
+  width: 100%;
+  background: #02101d;
+  padding: 12px 0 8px 0; }
+  footer .container {
+    padding: 0; }
+    footer .container > div {
+      padding: 0; }
+    footer .container .footer_right {
+      text-align: right; }
+    footer .container .footer_left {
+      text-align: left; }
+  footer p {
+    color: #4a4e51; }
+
+/*
+***Mobile***
+*/
+@media screen and (max-width: 769px) {
+  .responsive-menu-item-has-children > a {
+    padding-right: 40px !important; }
+    .responsive-menu-item-has-children > a .fa {
+      display: none; }
+
+  header {
+    background-image: url(/wp-content/uploads/2017/03/m_menu_bg.jpg); }
+    header .logo {
+      margin: 0 auto;
+      text-align: center;
+      width: 50%; }
+      header .logo img {
+        width: 100%; }
+    header .phoneBtn {
+      position: absolute;
+      top: 27px;
+      left: 5%; }
+      header .phoneBtn .fa {
+        font-size: 1.4rem !important;
+        color: #FFFFFF; }
+
+  button#responsive-menu-button {
+    outline: 0;
+    background: transparent !important; }
+
+  #responsive-menu {
+    margin-top: 15px !important;
+    margin-right: 15px !important; }
+    #responsive-menu li a {
+      text-align: right;
+      font-size: 1.1rem !important; }
+
+  .container {
+    padding: 0 16px !important; }
+
+  .services_icons .container div.service_icon {
+    width: 49.99%; }
+
+  .content_page_header .title_breadcrumbs {
+    top: 30%; }
+
+  .homepage_top_block .left_block .homepage_cube_item {
+    border-left: none !important; }
+    .homepage_top_block .left_block .homepage_cube_item a {
+      color: #FFFFFF;
+      text-decoration: none !important; }
+  .homepage_top_block .right_block {
+    display: none; }
+
+  .about_block {
+    display: none; }
+
+  .fullwidth {
+    padding: 1rem 0rem; }
+
+  .top_vehicles_block .slick-arrow {
+    top: 35% !important; }
+
+  #site-navigation {
+    display: none; }
+
+  .team_items_block > div {
+    margin-bottom: 2rem; }
+    .team_items_block > div:last-of-type {
+      margin-bottom: 0; }
+
+  .mantopused_block {
+    height: 670px; }
+
+  .contact_form_block {
+    padding-top: 1rem; }
+    .contact_form_block p {
+      text-align: center; }
+    .contact_form_block .wpcf7 .singleline li {
+      margin: 1rem auto !important; }
+
+  .page-template-sell .wpcf7 input {
+    width: 90%;
+    margin: 10px auto;
+    float: none; }
+  .page-template-sell .wpcf7 span.wpcf7-form-control-wrap.message > input {
+    width: 90%; }
+  .page-template-sell .wpcf7 .wpcf7-submit {
+    width: 90% !important;
+    display: block !important;
+    margin: 20px auto !important;
+    float: none !important; }
+  .page-template-sell .wpcf7 p:nth-child(3) {
+    margin-top: 0px; }
+
+  .page-template-contact_us .fullwidth {
+    padding: 0; }
+  .page-template-contact_us .contact_us_form_block {
+    width: 90%;
+    position: absolute;
+    right: auto;
+    left: auto;
+    top: 1%;
+    padding: 2rem 2rem 1rem 2rem;
+    background: #FFFFFF; }
+    .page-template-contact_us .contact_us_form_block > div {
+      padding-right: 0; }
+    .page-template-contact_us .contact_us_form_block > div:nth-child(2) {
+      margin-top: 30px;
+      margin-bottom: 20px; }
+    .page-template-contact_us .contact_us_form_block textarea {
+      height: 120px; }
+    .page-template-contact_us .contact_us_form_block .wpcf7-form-control.wpcf7-submit {
+      margin-top: 20px !important; }
+    .page-template-contact_us .contact_us_form_block .opening_times {
+      margin-top: 20px !important;
+      text-align: center; }
+    .page-template-contact_us .contact_us_form_block .waze_btn {
+      padding: 8px;
+      margin: 0 auto 20px auto;
+      width: 100%;
+      background: #32ccfe;
+      color: #FFFFFF;
+      font-size: 1.2rem;
+      text-align: center;
+      display: block; }
+      .page-template-contact_us .contact_us_form_block .waze_btn img {
+        width: 80px;
+        margin: 0 20px;
+        display: inline-block; }
+
+  .top_vehicles_block .container {
+    padding: 0 30px !important; }
+
+  footer .container > div {
+    text-align: center !important; } }
+/*
+*** Tabs
+ */
+/* Style the tab */
+div.tab {
+  overflow: hidden;
+  color: #FFFFFF;
+  text-align: center; }
+
+/* Style the buttons inside the tab */
+div.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  border-radius: 0; }
+
+div.tab button.active, div.tab button:hover {
+  border-bottom: 2px solid #00ace4; }
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s; }
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.ribbon {
+  position: absolute;
+  left: 16px;
+  top: 0px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  text-align: right; }
+
+.ribbon span {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  width: 100px;
+  display: block;
+  position: absolute;
+  top: 19px;
+  left: -21px; }
+
+.ribbon.black span {
+  color: #FFF;
+  background: #79A70A;
+  background: linear-gradient(#000000 0%, #000000 100%);
+  box-shadow: 0 3px 10px -5px black; }
+
+.ribbon.white span {
+  color: #000000;
+  background: #FFFFFF;
+  background: linear-gradient(#FFFFFFF 0%, #FFFFFF 100%); }
+
+.ribbon.red span {
+  color: #FFFFFF;
+  background: red;
+  background: linear-gradient(red 0%, red 100%); }
+
+/*# sourceMappingURL=style.css.map */

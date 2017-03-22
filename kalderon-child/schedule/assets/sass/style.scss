@@ -1,0 +1,100 @@
+/**
+ * VARIABLES
+ */
+@import 'colors';
+@import 'typography';
+@import 'mixins';
+
+
+
+
+
+body {
+  background-color: #fff;
+  color: $gray-light-text;
+  overflow-x: hidden;
+  line-height: 1;
+  font-size: 18px;
+  text-align: left;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.btn {
+  font-size: 24px;
+  font-weight: 100;
+  text-shadow: none;
+  opacity: 1;
+  @include transition (.3s);
+  
+  &.btn-warning {
+    background-color: $orange;
+    color: white;
+    &.shadow {
+      box-shadow: 0 4px 0px 0 #d57a11;
+    }
+    
+    &:hover {
+      background-color: #d57a11;
+        &.shadow {
+        box-shadow: 0 4px 0px 0 #f6961e;
+      }
+    }
+    
+  }
+  
+  &.btn-white {
+    background-color: white;
+    color: $orange;
+    &.shadow {
+      box-shadow: 0 4px 0px 0 #dddddd;
+    }
+    
+    &:hover {
+      background-color: #dddddd;
+      color: $gray-text;
+        &.shadow {
+        box-shadow: 0 4px 0px 0 white;
+      }
+    }
+  }
+  
+  &.border {
+    background-color: rgba( 255, 255, 255, 0 );
+    color: $orange;
+    border: 1px solid $orange;
+    &:hover {
+      background-color: $orange;
+      color: white;
+    }
+  }
+  
+}
+
+h2 {
+  display: block;
+  font-size: 20px;
+  color: $gray-light-text;
+  font-weight: 700;
+  margin: 50px 0 30px;
+}
+
+h3 {
+  display: block;
+  font-size: 60px;
+  color: $gray-text;
+  font-weight: 700;
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+}
+
+
+@import 'partials/_schedule';
